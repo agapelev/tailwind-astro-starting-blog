@@ -1,72 +1,71 @@
-export const defaultLang = 'en' as const;
+export const defaultLang = 'ru' as const;
 
 export const ui = {
-  'en': {
-    // Site Metadata
-    'siteMetadata.title': 'Astro Starter Blog',
-    'siteMetadata.headerTitle': 'Astro Starter Blog',   
-    'siteMetadata.description': 'A blog created with Astro and Tailwind.css',
-    'siteMetadata.language': 'en-US',
+  'ru': {
+    // Метаданные сайта
+    'siteMetadata.title': 'Блог Миссии Шехина',
+    'siteMetadata.headerTitle': 'Блог Миссии Шехина Казахстан',
+    'siteMetadata.description': 'Блог Миссии "Шехина" и "Школы Христа" Казахстан',
+    'siteMetadata.language': 'ru-RU',
 
-    // Pages
-    'pages.home.latestPosts': 'Latest posts',
-    'pages.home.viewAllPosts': 'View all posts',
-    'pages.home.noPosts': 'No posts found',
-    'pages.home.readMoreAbout': 'Read more about {title}',
-    'pages.home.readMore': 'Read more',
-    'pages.tags.title': 'Tags',
-    'pages.tags.description': 'All tags used in the blog',
-    'pages.tags.allTags': 'All tags',
-    'pages.tags.noTags': 'No tags found',
-    'pages.tags.viewPosts': 'View all posts with tag {tag}',
-    'pages.projects.title': 'Projects',
-    'pages.projects.description': 'All projects',
-    'pages.projects.allProjects': 'All projects',
-    'pages.projects.showcase': 'Showcase your projects',
-    'pages.blog.title': 'Blog',
-    'pages.blog.description': 'All blog posts',
-    'pages.404.title': '404 - Not Found',
-    'pages.404.description': 'The page you are looking for does not exist.',
-    'pages.404.backToHome': 'Back to home',
+    // Страницы
+    'pages.home.latestPosts': 'Последние посты',
+    'pages.home.viewAllPosts': 'Смотреть все посты',
+    'pages.home.noPosts': 'Посты не найдены',
+    'pages.home.readMoreAbout': 'Читать подробнее о {title}',
+    'pages.home.readMore': 'Читать далее',
+    'pages.tags.title': 'Теги',
+    'pages.tags.description': 'Все теги, используемые в блоге',
+    'pages.tags.allTags': 'Все теги',
+    'pages.tags.noTags': 'Теги не найдены',
+    'pages.tags.viewPosts': 'Смотреть все посты с тегом {tag}',
+    'pages.projects.title': 'Проекты',
+    'pages.projects.description': 'Все проекты',
+    'pages.projects.allProjects': 'Все проекты',
+    'pages.projects.showcase': 'Представьте свои проекты',
+    'pages.blog.title': 'Блог',
+    'pages.blog.description': 'Все записи блога',
+    'pages.404.title': '404 - Страница не найдена',
+    'pages.404.description': 'Страница, которую вы ищете, не существует.',
+    'pages.404.backToHome': 'Назад на главную',
 
+    // Компоненты
+    'components.scrollTopAndComments.scrollTop': 'Наверх',
+    'components.themeSwitcher.toggleDarkMode': 'Переключить тёмную тему',
+    'components.card.linkToPost': 'Читать подробнее о {title}',
+    'components.mobileNav.toggleMenu': 'Открыть меню',
+    'components.listPostCover.publishedAt': 'Опубликовано',
+    'components.pagination.previous': 'Назад',
+    'components.pagination.next': 'Вперёд',
+    'components.socialShareButtons.sharing': 'Делиться — значит заботиться!',
 
-    // Components
-    'components.scrollTopAndComments.scrollTop': 'Scroll To Top',
-    'components.themeSwitcher.toggleDarkMode': 'Toggle Dark Mode',
-    'components.card.linkToPost': 'Read more about {title}',
-    'components.mobileNav.toggleMenu': 'Toggle Menu',
-    'components.listPostCover.publishedAt': 'Published at',
-    'components.pagination.previous': 'Previous',
-    'components.pagination.next': 'Next',
-    'components.socialShareButtons.sharing': 'Sharing is caring!',
+    // Навигация
+    'nav.home': 'Главная',
+    'nav.blog': 'Блог',
+    'nav.projects': 'Проекты',
+    'nav.tags': 'Теги',
+    'nav.about': 'О нас',
 
-    // Navigation
-    'nav.home': 'Home',
-    'nav.blog': 'Blog',
-    'nav.projects': 'Projects',
-    'nav.tags': 'Tags',
-    'nav.about': 'About',
-
-    // Layouts
-    'layouts.authorLayout.aboutAuthor': 'About {author}',
-    'layouts.authorLayout.latestPosts': 'Latest author posts',
-    'layouts.listWithTagsLayout.allPosts': 'All posts',
-    'layouts.listWithTagsLayout.publishedAt': 'Published at',
-    'layouts.postLayout.publishedAt': 'Published at',
-    'layouts.postLayout.authors': 'Authors',
-    'layouts.postLayout.authorName': 'Name',
+    // Шаблоны
+    'layouts.authorLayout.aboutAuthor': 'Об авторе {author}',
+    'layouts.authorLayout.latestPosts': 'Последние посты автора',
+    'layouts.listWithTagsLayout.allPosts': 'Все посты',
+    'layouts.listWithTagsLayout.publishedAt': 'Опубликовано',
+    'layouts.postLayout.publishedAt': 'Опубликовано',
+    'layouts.postLayout.authors': 'Авторы',
+    'layouts.postLayout.authorName': 'Имя',
     'layouts.postLayout.authorTwitter': 'Twitter',
-    'layouts.postLayout.draftMessage': 'This is a draft. It might be incomplete or have errors.',
-    'layouts.postLayout.tableOfContents': 'Table of Contents',
-    'layouts.postLayout.tags': 'Tags',
-    'layouts.postLayout.previousPost': 'Previous post',
-    'layouts.postLayout.nextPost': 'Next post',
-    'layouts.postLayout.relatedPosts': 'Related posts',
-    'layouts.postLayout.backToBlog': 'Back to blog',
-    'layouts.simplePostLayout.previousPost': 'Previous post: {title}',
-    'layouts.simplePostLayout.nextPost': 'Next post: {title}',
+    'layouts.postLayout.draftMessage': 'Это черновик. Он может быть неполным или содержать ошибки.',
+    'layouts.postLayout.tableOfContents': 'Содержание',
+    'layouts.postLayout.tags': 'Теги',
+    'layouts.postLayout.previousPost': 'Предыдущий пост',
+    'layouts.postLayout.nextPost': 'Следующий пост',
+    'layouts.postLayout.relatedPosts': 'Похожие посты',
+    'layouts.postLayout.backToBlog': 'Назад к блогу',
+    'layouts.simplePostLayout.previousPost': 'Предыдущий пост: {title}',
+    'layouts.simplePostLayout.nextPost': 'Следующий пост: {title}',
 
     // SEO
-    'seo.pagination.page': '%s - Page {page}',
+    'seo.pagination.page': '%s - Страница {page}',
   }
 };
